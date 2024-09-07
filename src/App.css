@@ -1,0 +1,109 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  /* Use Roboto font for the entire app */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.fasting-timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.time-display {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.controls button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.start-pause-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.reset-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.goal-reached {
+  font-size: 24px;
+  color: #4CAF50;
+  margin-top: 10px;
+}
+
+.fasting-benefits {
+  text-align: center;
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+}
+
+.benefit-item {
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.benefit-item:hover .benefit-detail {
+  display: block;
+}
+
+.benefit-detail {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+.hour-number {
+  color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .time-display {
+    font-size: 24px;
+  }
+
+  .controls button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .goal-reached {
+    font-size: 18px;
+  }
+
+  .benefit-item {
+    font-size: 14px;
+  }
+}
